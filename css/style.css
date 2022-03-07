@@ -1,3 +1,27 @@
-body {
-    background-color: aqua;
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* 10px */
+    font-size: 62.5%;      
+} 
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1400px;
+
+    /* Test */
+    border: 2px solid red;
+    height: 800px;
+}
+
+header {
+    height: 80px;
+    background-color: violet;
+    margin-bottom: 2em;
 }
