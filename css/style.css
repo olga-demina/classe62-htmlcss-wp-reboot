@@ -5,6 +5,22 @@
     box-sizing: border-box;
 }
 
+/* DEBUG */
+.debug.container {
+    border: 2px solid red;
+}
+
+.debug .content-top,
+.debug .col {
+    background-color: lightskyblue;
+}
+
+.debug .content {
+    background-color: blue;
+}
+
+/* COMMON */
+
 html {
     /* 10px */
     font-size: 62.5%;      
@@ -14,14 +30,55 @@ html {
     width: 80%;
     margin: 0 auto;
     max-width: 1400px;
-
-    /* Test */
-    border: 2px solid red;
-    height: 800px;
 }
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col {
+    float: left;
+}
+
+.mb-2 {
+    margin-bottom: 2em;
+}
+
+
+/* HEADER */
 
 header {
     height: 80px;
     background-color: violet;
-    margin-bottom: 2em;
+}
+
+/* MAIN */
+.banner {
+    height: 400px;
+    background-color: yellow;
+}
+
+.content {
+    padding-bottom: 2em;
+}
+
+.content-top {
+    height: 60px;
+}
+
+.col {
+    height: 200px;
+}
+
+.col-side {
+    width: 25%;
+}
+
+.col-center {
+    /* width: calc(50% - 20px);
+    margin: 0 10px; */
+    width: 46%;
+    margin: 0 2%;
 }
