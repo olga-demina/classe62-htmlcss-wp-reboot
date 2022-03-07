@@ -23,8 +23,17 @@
 
 html {
     /* 10px */
-    font-size: 62.5%;      
+    font-size: 62.5%;
+    font-family: "Montserrat", sans-serif;  
 } 
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
 
 .container {
     width: 80%;
@@ -52,9 +61,25 @@ html {
 
 /* HEADER */
 
-header {
-    height: 80px;
-    background-color: violet;
+.logo {
+    /* width: 100px; */
+    width: auto;
+    height: 60px;
+    padding-right: 1em;
+    border-right: 1px solid lightgray;
+}
+
+.header-nav li{
+    padding-right: .5em;
+    display: inline-block;
+    color: grey;
+}
+
+.header-nav a {
+    font-size: 1.2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: inherit;
 }
 
 /* MAIN */
@@ -71,9 +96,7 @@ header {
     height: 60px;
 }
 
-.col {
-    height: 200px;
-}
+
 
 .col-side {
     width: 25%;
