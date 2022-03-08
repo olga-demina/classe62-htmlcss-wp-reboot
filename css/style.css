@@ -59,6 +59,16 @@ img {
     margin-bottom: 2em;
 }
 
+.overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.2);
+}
+
 /* HEADER */
 
 .logo {
@@ -83,9 +93,30 @@ img {
 }
 
 /* MAIN */
+
+/* Banner */
 .banner {
-    height: 400px;
-    background-color: yellow;
+    position: relative;
+    height: 300px;
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-text {
+    position: absolute;
+    bottom: 3em;
+    left: 2em;
+    width: 60%;
+    color: white;
+}
+
+.banner-text h1{
+    font-size: 2em;
+}
+
+.banner-text p {
+    font-size: 1.2em;
 }
 
 .content {
