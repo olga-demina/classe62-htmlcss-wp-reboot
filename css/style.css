@@ -130,7 +130,6 @@ img {
     font-size: 1.8em;
 }
 
-
 .col-side {
     width: 25%;
 }
@@ -142,8 +141,31 @@ img {
     margin: 0 2%;
 }
 
+.col-img {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.col-img img {
+    display: block;
+    height: 150px;
+    object-fit: cover;
+}
+
+.col-text h4 {
+    font-size: 1.4em;
+    margin: 1em 0;
+}
+
 /* FOOTER */
 footer {
-    height: 50px;
-    background-color: blueviolet;
+    padding: 1.5em;
+    font-size: 1.2em;
+    text-align: center; 
 } 
+
+footer .heart {
+    font-size: 2em;
+    color: red;
+}
